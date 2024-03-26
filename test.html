@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.onload = function () {
+        // Get the value from localStorage
+        let name = localStorage.getItem("Name");
+        let email = localStorage.getItem("Email");
+        let password = localStorage.getItem("Password");
+
+        // Display the value on the page
+        let nameout = document.getElementById("header");
+        let Emailout = document.getElementById("para1");
+        let passwordout = document.getElementById("para2");
+
+        document.body.innerHTML = `<h1 id="header">Welcome MR: ${name}</h1>
+        <p id="para1"> Your Email is: ${email} </p>
+        <p id="para2">your password is: ${password}</p>
+        `;
+      };
+    </script>
+  </head>
+  <body>
+    
+  </body>
+</html>

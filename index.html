@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAHER Moves</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="Moves.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!--start Nav-bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg">
+      <div class="container-fluid divnav">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+            alt="#"
+            class="navimg img-fluid"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" id="home" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="toggleSignUp()">Signup</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Language
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item english" href="#">English</a></li>
+                <li><a class="dropdown-item arabic" href="#">Arabic</a></li>
+                <li><a class="dropdown-item chinese" href="#">chinese</a></li>
+                <li><a class="dropdown-item French" href="#">French</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <input type="text" class="search" placeholder="Search ..." />
+        </div>
+      </div>
+    </nav>
+    <h1>\/</h1>
+    <form class="form-inline" method="post" id="signup" style="display: none;">
+      <label for="name">Name:</label>
+      <input type="text" id="name"  placeholder="Enter name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter email" name="email" required>
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+      <label>
+        <input type="checkbox" name="remember"> Remember me
+      </label>
+      <button onclick="submitValue(event)"type="submit" >Submit</button>
+    </form>
+    <!-- end Nav-bar -->
+    <!-- quots -->
+    <!-- quots -->
+    <!-- strat card -->
+    <div class="head">
+      <h1 id="title">ENJOY YOUR MOVIE</h1>
+      <h4 id="para">>>MOST POPULAR MOVIES<<</h4>
+    </div>
+    <div>
+      <h2 class="show">HOVER TO GET QUOTE OF YOUR DAY</h2>
+      <p class="hide">NO REASONE TO DIE YET MAYBE :)</p>
+    </div>
+
+    <!-- main page -->
+    <div class="main">
+      <div class="d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- <div class="movie">
+  <img src="me.jpeg" alt="image">
+  <div class="movie-info">
+<h4><a href="">Movie Title</a></h4>
+<span calss="rate">2023</span>
+  </div>
+</div> -->
+      <!-- <div class="movie">
+  <img src="me.jpeg" alt="image">
+  <div class="movie-info">
+<h4><a href="">Movie Title</a></h4>
+<span calss="rate">2023</span>
+  </div>
+</div>-->
+      <div class="movie">
+          <img class="imghover" src="me.jpeg" alt="image" />
+        <div class="movie-info">
+          <h4><a href="">Movie Title</a></h4>
+          <span calss="date">2023</span>
+          <span class="rate">9.8</span>
+        </div>
+        <div class="Overveiw">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          harum quisquam voluptas velit, necessitatibus similique temporibus nam
+          nulla fuga blanditiis veniam architecto sint facilis voluptatibus,
+          explicabo quis error optio doloremque.
+        </div>
+      </div>
+    </div>
+    <!-- end of the card -->
+    <!-- pagination -->
+    <div class="pagination">
+      <button class="previous" disabled>Previous</button>
+      <button class="next">Next</button>
+    </div>
+    <!-- pagination -->
+    <script src="Moves.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
